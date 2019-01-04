@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION2.8)
+project(TestVTKInstall)
+find_package(VTKREQUIRED)
+include(${VTK_USE_FILE})
+add_executable(${PROJECT_NAME}TestVTKInstall.cpp)
+target_link_libraries(${PROJECT_NAME}vtkRendering vtkCommon)
