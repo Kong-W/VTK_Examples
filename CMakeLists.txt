@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION3.8)
+cmake_minimum_required(VERSION 3.3...3.12FATAL_ERROR)
 project(TestVTKInstall)
 find_package(VTKREQUIRED)
 include(${VTK_USE_FILE})
