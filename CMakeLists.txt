@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION2.8)
+cmake_minimum_required(VERSION3.8)
 project(TestVTKInstall)
 find_package(VTKREQUIRED)
 include(${VTK_USE_FILE})
