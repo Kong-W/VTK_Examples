@@ -5,10 +5,6 @@ PROJECT(Shadows)
 find_package(VTK REQUIRED)
 include(${VTK_USE_FILE})
 
-add_executable(Shadows MACOSX_BUNDLE Shadows.cxx)
+add_executable(${PROJECT_NAME} Shadows.cxx)
 
-if(VTK_LIBRARIES)
-  target_link_libraries(Shadows ${VTK_LIBRARIES})
-else()
-  target_link_libraries(Shadows vtkHybrid vtkWidgets)
-endif()
+target_link_libraries(${PROJECT_NAME} ${VTK_LIBRARIES})
